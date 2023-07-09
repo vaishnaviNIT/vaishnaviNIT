@@ -5,104 +5,316 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Lantern | Home</title>
+
+    <!-- meta tags are used for SEO purpose -->
+    <meta property="og:description"
+        content="Beebom is a new media company that covers technology news, reviews and produce quality tech videos.">
+    <title>Basics</title>
+    <link rel="shortcut icon" href="./img/pngwing.com pichu.png" type="image/x-icon">
+
+
+
+    <!-- 1. Styling using style tag  -->
+    <style>
+        * {
+            /* background-color: rgb(197, 255, 127); */
+        }
+
+        h2 {
+            color: red;
+        }
+
+
+
+
+        /* table formatting  */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        thead th,
+        tfoot th {
+            font-family: "Rock Salt", cursive;
+        }
+
+        th {
+            letter-spacing: 2px;
+        }
+
+        td {
+            letter-spacing: 1px;
+        }
+
+        tbody td,
+        tfoot td {
+            text-align: center;
+        }
+
+        tfoot th {
+            text-align: right;
+        }
+
+        caption {
+            font-family: "Rock Salt", cursive;
+            padding: 20px;
+            /* font-style: italic; */
+            /* caption-side: bottom; */
+            color: #666;
+            /* text-align: right; */
+            letter-spacing: 1px;
+        }
+    </style>
+
+    <!-- 2. Styling by using external cascading style sheet  -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./img/fav.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 
 </head>
 
 <body>
-    <!-- <h1>Hello Lantern</h1> -->
-    <header>
-        <!-- Logo for the Navbar and the Home Page -->
-        <div class="container">
-            <div id="branding" class="logo">
-                <img src="./img/—Pngtree—red and black logo_5517319.png" alt="brand logo" id="logo"
-                    class="animate__jello animate__animated">
-                <h1 class="animate__lightSpeedInRight animate__animated"><span class="highlight">Code</span> Lantern
-                </h1>
-            </div>
-
-            <!-- Navbar -->
-            <nav>
-                <ul>
-                    <li class="current"><a href="./index.html">Home</a></li>
-                    <li><a href="./components/about.html">About Us</a></li>
-                    <li><a href="./components/solutions.html">Solutions</a></li>
-                    <li><a href="./components/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
 
-    <!-- showcase  -->
-    <section id="showcase">
-        <div class="background"></div>
-        <div class="container">
-            <h1>Web Dev Company</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga placeat, possimus fugit iusto amet error
-                debitis consectetur recusandae neque vel ipsum rerum molestiae alias eius aut architecto assumenda hic
-                nostrum? Laborum animi nostrum provident. Quisquam, soluta ducimus magni hic et, ullam ut debitis optio
-                deserunt illum laborum porro vitae eum! Nam laboriosam, dolor iste dolorum earum tenetur qui est facilis
-                adipisci corporis animi doloremque quae id dolores dolore sequi error iusto amet fugit facere tempore
-                illo fuga. Enim eaque voluptatem aliquam a autem culpa? Quae in sapiente molestias facere ipsam eius
-                nobis ipsa repellat expedita tenetur modi, doloremque libero consectetur!</p>
-        </div>
-    </section>
 
-    <!-- newsletter -->
-    <section id="newsletter">
-        <div class="container">
-            <h1>Code Lantern Newsletter</h1>
-            <form action="">
-                <input type="email" placeholder="john@email.com" required>
-                <button type="submit" class="button_1">Subscribe</button>
-            </form>
-        </div>
-    </section>
+    <!-- Headings in CSS  -->
+    <h1 id="main-heading">Heading 1</h1>
+    <h2 style="color: blueviolet;">Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
 
-    <!-- boxes -->
-    <section id="boxes">
-        <div class="container" id="box-holder">
-            <div class="box shadow">
-                <img src="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png"
-                    alt="Code Lantern Logo" class="tech-icons">
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cum quos autem dolorum nihil modi iure
-                    aut nobis ratione beatae.</p>
-            </div>
-            <div class="box shadow">
-                <img src="./img/web-dev.png" alt="Code Lantern Logo" class="tech-icons">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus ex necessitatibus
-                    voluptates neque est harum excepturi at consequatur sint?</p>
-            </div>
-            <div class="box shadow">
-                <img src="https://www.transparentpng.com/thumb/web-hosting/ilc5wD-web-hosting-hd-photo-png.png"
-                    alt="Web hosting logo" class="tech-icons">
-                <h3>Web Hosting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus ex necessitatibus
-                    voluptates neque est harum excepturi at consequatur sint?</p>
-            </div>
-        </div>
-    </section>
+    <img src="./img/header-logo.png" alt="html-css-header"> <br>
+    <a href="https://www.google.com/" target="_blank">Open to Google</a>
+    <a href="#frameworks">Click to go to Frameworks form</a>
 
-    <footer>
-        <p>Say hi <i class='bx bxs-ghost bx-tada'></i> to us in these platform.</p>
-        <ul class="social">
-            <li class="social-icons"><a href="http://www.facebook.com"><i class='bx bxl-facebook'></i></a></li>
-            <li class="social-icons"><a href="http://www.instagram.com"><i class='bx bxl-instagram'></i></a></li>
-            <li class="social-icons"><a href="http://www.linkedin.com"><i class='bx bxl-linkedin'></i></a></li>
-            <li class="social-icons"><a href="http://www.twitter.com"><i class='bx bxl-twitter'></i></a></li>
+
+
+    <!-- Paragraph tag foer writing para  -->
+    <!-- em used for emphasize - i.e. italicize  -->
+    <!-- strong is used for bold  -->
+    <!-- span is used to target a specific group of word -->
+
+    <!-- 3. Styling using inline styling has the highest precerdence -->
+
+    <p> <strong>Lorem</strong> <br>ipsum</br> <em>Voluptate</em> <i>dolor</i> sit amet consectetur, adipisicing elit.
+        Cumque facilis fugiat iure. Iste ad et doloribus autem
+        ipsum facere, placeat dolorum aliquam sapiente culpa, perspiciatis quibusdam ea nulla odio porro nesciunt
+        repellendus tempore labore blanditiis. , <span id="target">quisquam</span> a. Dicta fuga ipsum voluptatibus
+        magnam quasi ratione
+        velit, cumque molestias, laborum quos nemo iusto accusantium quaerat, rerum nisi a quas totam nesciunt?</p>
+
+
+    <h2>HTML Tables</h2>
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics -->
+    <table>
+        <caption>Dog food habits</caption>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th>Knocky</th>
+                <th>Flor</th>
+                <th>Ella</th>
+                <th>Juan</th>
+            </tr>
+            <thead>
+            <tbody>
+                <tr>
+                    <td>Breed</td>
+                    <td>Jack Russell</td>
+                    <td>Poodle</td>
+                    <td>Streetdog</td>
+                    <td>Cocker Spaniel</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>16</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Owner</td>
+                    <td>Mother-in-law</td>
+                    <td>Me</td>
+                    <td>Me</td>
+                    <td>Sister-in-law</td>
+                </tr>
+                <tr>
+                    <td>Eating Habits</td>
+                    <td>Eats everyone's leftovers</td>
+                    <td>Nibbles at food</td>
+                    <td>Hearty eater</td>
+                    <td>Will eat till he explodes</td>
+                </tr>
+            </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="3">Total Dogs</th>
+                <td colspan="2">4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--  
+        The <div> tag defines a division or a section in an HTML document. 
+        The <div> tag is used as a container for HTML elements
+        -->
+    <div>
+        <h2 id="frameworks">Some popular forntend Frameworks</h2>
+        <!-- Lists  -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Est officia dolorem exercitationem odit
+            obcaecati ducimus nihil voluptatem facere excepturi deleniti.</p>
+        <!-- unordered list  -->
+        <ul>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Angular</li>
         </ul>
-        <p>Code Lantern &copy; 2023 All Rights Reserved.</p>
-    </footer>
-<script> configObj = {"buttonD":"M8 18.568L10.8 21.333 16 16.198 21.2 21.333 24 18.568 16 10.667z","buttonT":"translate(-1148 -172) translate(832 140) translate(32 32) translate(284)","shadowSize":"0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)","roundnessSize":"6px","buttonDToBottom":"40px","buttonDToRight":"40px","selectedBackgroundColor":"#c0ff9e","selectedIconColor":"#626a7e","buttonWidth":"48px","buttonHeight":"48px","svgWidth":"40px","svgHeight":"40px"};function createButton(obj, pageSimulator) {    const body = document.querySelector("body");    backToTopButton = document.createElement("span");    backToTopButton.classList.add("softr-back-to-top-button");    backToTopButton.id = "softr-back-to-top-button";    pageSimulator      ? pageSimulator.appendChild(backToTopButton)      : body.appendChild(backToTopButton);    backToTopButton.style.width = obj.buttonWidth;    backToTopButton.style.height = obj.buttonHeight;    backToTopButton.style.marginRight = obj.buttonDToRight;    backToTopButton.style.marginBottom = obj.buttonDToBottom;    backToTopButton.style.borderRadius = obj.roundnessSize;    backToTopButton.style.boxShadow = obj.shadowSize;    backToTopButton.style.color = obj.selectedBackgroundColor;    backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;    pageSimulator ? backToTopButton.style.position = "absolute" : backToTopButton.style.position = "fixed";    backToTopButton.style.outline = "none";    backToTopButton.style.bottom = "0px";    backToTopButton.style.right = "0px";    backToTopButton.style.cursor = "pointer";    backToTopButton.style.textAlign = "center";    backToTopButton.style.border = "solid 2px currentColor";    backToTopButton.innerHTML =      '<svg class="back-to-top-button-svg animate__jello animate__animated" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';    backToTopButtonSvg = document.querySelector(".back-to-top-button-svg");    backToTopButtonSvg.style.verticalAlign = "middle";    backToTopButtonSvg.style.margin = "auto";    backToTopButtonSvg.style.justifyContent = "center";    backToTopButtonSvg.style.width = obj.svgWidth;    backToTopButtonSvg.style.height = obj.svgHeight;    backToTopButton.appendChild(backToTopButtonSvg);    backToTopButtonImg = document.querySelector(".back-to-top-button-img");    backToTopButtonImg.style.fill = obj.selectedIconColor;    backToTopButtonSvg.appendChild(backToTopButtonImg);    backToTopButtonImg.setAttribute("d", obj.buttonD);    backToTopButtonImg.setAttribute("transform", obj.buttonT);        if(!pageSimulator) {      backToTopButton.style.display = "none";      window.onscroll = function() {        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {          backToTopButton.style.display = "block";        } else {          backToTopButton.style.display = "none";        }      };        backToTopButton.onclick = function() {        document.body.scrollTop = 0;        document.documentElement.scrollTop = 0;      };    }  };document.addEventListener("DOMContentLoaded", function() { createButton(configObj, null); });</script>
+
+        <!-- ordered list  -->
+        <ol>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Angular</li>
+        </ol>
+    </div>
+
+    <div>
+
+        <!-- input tags -->
+        <!-- https://www.w3schools.com/html/html_form_input_types.asp -->
+        <fieldset>
+            <legend><strong>Feedback Form</strong></legend>
+            <form action="www..." method="post">
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Full Name" />
+                </div>
+                <div>
+                    <label for="birthday">DOB:</label><br>
+                    <input type="date" id="birthday" name="birthday" placeholder="Enter your date of birth">
+                </div>
+
+                <!-- 10 digit number -->
+                <div>
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                        placeholder="9-999-999-999">
+                </div>
+
+                <div>
+                    <label for="degree">Degree Duration</label><br>
+                    <input type="number" name="degree" id="degree" />
+                </div>
+
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" required />
+                </div>
+
+                <div>
+                    <label for="pasword">Password</label><br>
+                    <input type="password" name="pasword" id="pasword" required />
+                </div>
+
+
+                <!-- Dropdown  -->
+
+
+
+                <div>
+                    <h5>Select Your Favourite Language</h5>
+                    <!-- Radio Buttons  -->
+                    <!-- if all the radio buttons have the same name then only one can be selected at a time -->
+                    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+                    <div>
+                        <label for="java">Java</label>
+                        <input type="radio" name="fav-language" id="java" value="Java 8">
+                    </div>
+
+                    <div>
+                        <label for="python">Python</label>
+                        <input type="radio" name="fav-language" id="python" value="Python">
+                    </div>
+
+                    <div>
+                        <label for="js">Java Script</label>
+                        <input type="radio" name="fav-language" id="js" value="js" checked>
+                    </div>
+                    <input type="hidden" id="custId" name="custId" value="3487">
+                </div><br>
+
+
+
+
+                <div>
+                    <label for="ide">Choose your Favourite IDE</label>
+                    <select name="ide" id="ide">
+                        <option value="as">Android Studio</option>
+                        <option value="in">IntelliJ Idea</option>
+                        <option value="py">Pycharm</option>
+                        <option value="ecl">Eclipse</option>
+                    </select>
+                </div><br>
+
+                <div>
+                    <!-- Auto Complete Input  -->
+                    <label for="editor">Enter your Favourite Editor</label>
+                    <input list="editors" id="editor">
+                    <datalist id="editors">
+                        <option value="fleet"></option>
+                        <option value="Notepad"></option>
+                        <option value="Notepad ++">Notepad ++</option>
+                        <option value="VS Code"></option>
+                    </datalist>
+                </div><br>
+
+                <div>
+                    <!-- file upload input -->
+                    <label for="file">Upload your Resume</label><br>
+                    <input type="file" name="file" id="file">
+                </div>
+
+                <div>
+                    <!--  checkbox input -->
+                    <h5>Select your course preference</h5>
+                    <input type="checkbox" id="mern" name="mern" value="mern">
+                    <label for="mern">MERN stack</label><br>
+
+                    <input type="checkbox" id="java-fullstack" name="java-fullstack" value="java-fullstack">
+                    <label for="java-fullstack">Java Full Stack</label><br>
+
+                    <input type="checkbox" id="elk" name="elk" value="elk">
+                    <label for="elk">ELK stack</label>
+                </div>
+
+
+
+                <br>
+                <div>
+
+                    <label for="feeback">Feedback</label><br>
+                    <textarea name="" id="feeback" cols="50" rows="3"
+                        placeholder="Enter your feeback in max 100 words"></textarea>
+
+                </div>
+
+                <br>
+                <!-- submits the whole form to the server URL action="...."  -->
+                <input style="border-radius: 5px; background: whitesmoke;" type="submit" value="SUBMIT">
+                <!-- resets the whole form  -->
+                <input style="border-radius: 5px; background: rgb(237, 185, 185);" type="reset">
+
+
+            </form>
+        </fieldset>
+
+    </div>
 </body>
 
 </html>
