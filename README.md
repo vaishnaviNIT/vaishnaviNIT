@@ -5,316 +5,349 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- meta tags are used for SEO purpose -->
-    <meta property="og:description"
-        content="Beebom is a new media company that covers technology news, reviews and produce quality tech videos.">
-    <title>Basics</title>
-    <link rel="shortcut icon" href="./img/pngwing.com pichu.png" type="image/x-icon">
-
-
-
-    <!-- 1. Styling using style tag  -->
-    <style>
-        * {
-            /* background-color: rgb(197, 255, 127); */
-        }
-
-        h2 {
-            color: red;
-        }
-
-
-
-
-        /* table formatting  */
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        thead th,
-        tfoot th {
-            font-family: "Rock Salt", cursive;
-        }
-
-        th {
-            letter-spacing: 2px;
-        }
-
-        td {
-            letter-spacing: 1px;
-        }
-
-        tbody td,
-        tfoot td {
-            text-align: center;
-        }
-
-        tfoot th {
-            text-align: right;
-        }
-
-        caption {
-            font-family: "Rock Salt", cursive;
-            padding: 20px;
-            /* font-style: italic; */
-            /* caption-side: bottom; */
-            color: #666;
-            /* text-align: right; */
-            letter-spacing: 1px;
-        }
-    </style>
-
-    <!-- 2. Styling by using external cascading style sheet  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-
-
-
+    <link rel="shortcut icon" href="/img/pin-cv.ico" type="image/x-icon">
+    <title>Resume Builder</title>
 </head>
 
 <body>
+    <!-- FORM -->
+    <div class="container" id="resume-form">
+        <h1 class="text-center my-4 display-1">Resume Builder</h1>
+        <p class="text-center lead">Free online resume maker, Build your brand-new resume in as little as 5 minutes</p>
+        <!-- ROW-1  -->
+        <div class="row">
 
+            <!-- Personal Details COL-1-->
+            <div class="col-md-5">
+                <h3 class="text-center">Personal Details</h3>
 
-
-    <!-- Headings in CSS  -->
-    <h1 id="main-heading">Heading 1</h1>
-    <h2 style="color: blueviolet;">Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-
-    <img src="./img/header-logo.png" alt="html-css-header"> <br>
-    <a href="https://www.google.com/" target="_blank">Open to Google</a>
-    <a href="#frameworks">Click to go to Frameworks form</a>
-
-
-
-    <!-- Paragraph tag foer writing para  -->
-    <!-- em used for emphasize - i.e. italicize  -->
-    <!-- strong is used for bold  -->
-    <!-- span is used to target a specific group of word -->
-
-    <!-- 3. Styling using inline styling has the highest precerdence -->
-
-    <p> <strong>Lorem</strong> <br>ipsum</br> <em>Voluptate</em> <i>dolor</i> sit amet consectetur, adipisicing elit.
-        Cumque facilis fugiat iure. Iste ad et doloribus autem
-        ipsum facere, placeat dolorum aliquam sapiente culpa, perspiciatis quibusdam ea nulla odio porro nesciunt
-        repellendus tempore labore blanditiis. , <span id="target">quisquam</span> a. Dicta fuga ipsum voluptatibus
-        magnam quasi ratione
-        velit, cumque molestias, laborum quos nemo iusto accusantium quaerat, rerum nisi a quas totam nesciunt?</p>
-
-
-    <h2>HTML Tables</h2>
-    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics -->
-    <table>
-        <caption>Dog food habits</caption>
-        <thead>
-            <tr>
-                <th>&nbsp;</th>
-                <th>Knocky</th>
-                <th>Flor</th>
-                <th>Ella</th>
-                <th>Juan</th>
-            </tr>
-            <thead>
-            <tbody>
-                <tr>
-                    <td>Breed</td>
-                    <td>Jack Russell</td>
-                    <td>Poodle</td>
-                    <td>Streetdog</td>
-                    <td>Cocker Spaniel</td>
-                </tr>
-                <tr>
-                    <td>Age</td>
-                    <td>16</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Owner</td>
-                    <td>Mother-in-law</td>
-                    <td>Me</td>
-                    <td>Me</td>
-                    <td>Sister-in-law</td>
-                </tr>
-                <tr>
-                    <td>Eating Habits</td>
-                    <td>Eats everyone's leftovers</td>
-                    <td>Nibbles at food</td>
-                    <td>Hearty eater</td>
-                    <td>Will eat till he explodes</td>
-                </tr>
-            </tbody>
-
-        <tfoot>
-            <tr>
-                <th colspan="3">Total Dogs</th>
-                <td colspan="2">4</td>
-            </tr>
-        </tfoot>
-    </table>
-
-    <!--  
-        The <div> tag defines a division or a section in an HTML document. 
-        The <div> tag is used as a container for HTML elements
-        -->
-    <div>
-        <h2 id="frameworks">Some popular forntend Frameworks</h2>
-        <!-- Lists  -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Est officia dolorem exercitationem odit
-            obcaecati ducimus nihil voluptatem facere excepturi deleniti.</p>
-        <!-- unordered list  -->
-        <ul>
-            <li>React</li>
-            <li>Vue</li>
-            <li>Angular</li>
-        </ul>
-
-        <!-- ordered list  -->
-        <ol>
-            <li>React</li>
-            <li>Vue</li>
-            <li>Angular</li>
-        </ol>
-    </div>
-
-    <div>
-
-        <!-- input tags -->
-        <!-- https://www.w3schools.com/html/html_form_input_types.asp -->
-        <fieldset>
-            <legend><strong>Feedback Form</strong></legend>
-            <form action="www..." method="post">
-                <div>
-                    <label for="name">Name</label><br>
-                    <input type="text" name="name" id="name" placeholder="Enter Your Full Name" />
+                <div class="form-group mt-3">
+                    <label for="full-name">Name</label>
+                    <input type="text" id="full-name" placeholder="Full Name" required="true" class="form-control">
                 </div>
-                <div>
-                    <label for="birthday">DOB:</label><br>
-                    <input type="date" id="birthday" name="birthday" placeholder="Enter your date of birth">
+                <div class="form-group mt-2">
+                    <label for="dob">DOB</label>
+                    <input type="date" id="dob" placeholder="Full Name" required="true" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="10 Digit phone number" required="true"
+                        class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="email">E-Mail</label>
+                    <!-- <input type="tel" id="email" placeholder="someone@example.com" required="true" class="form-control"><br> -->
+                    <input type="email" id="email" placeholder="example@domain.com" required="true"
+                        class="form-control">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
+                </div>
+                <div class="form-group mt-2">
+                    <label for="address">Address</label>
+                    <textarea id="address" cols="30" rows="3" placeholder="Present Address" required="true"
+                        class="form-control"></textarea>
                 </div>
 
-                <!-- 10 digit number -->
-                <div>
-                    <label for="phone">Phone Number</label><br>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                        placeholder="9-999-999-999">
-                </div>
+                <div class="form-group mt-2">
+                    <label for="profile-img">Profile Picture</label>
+                    <input type="file" id="profile-img" accept="image/*" class="form-control"
+                        placeholder="upload profile picture" onchange="previewImage(event)">
 
-                <div>
-                    <label for="degree">Degree Duration</label><br>
-                    <input type="number" name="degree" id="degree" />
-                </div>
-
-                <div>
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email" required />
-                </div>
-
-                <div>
-                    <label for="pasword">Password</label><br>
-                    <input type="password" name="pasword" id="pasword" required />
+                    <img src="#" alt="Uploaded Image" srcset="" style="display: none;" id="image-preview"
+                        class="img-thumbnail">
                 </div>
 
 
-                <!-- Dropdown  -->
+                <!-- Personal Links -->
+                <h4 class="my-3">Links</h4>
+                <!-- <h5 class="text-secondary my-3">Links</h5> -->
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn
+                        <i class="fa-brands fa-linkedin"></i>
+                    </label>
+                    <input type="text" id="linkedin" class="form-control" placeholder="Enter LinkedIn URL">
+                </div>
+                <div class="form-group mt-1">
+                    <label for="github">Github
+                        <!-- <i class="fa-brands fa-square-github"></i> -->
+                        <i class="fa-brands fa-github"></i>
+                    </label>
+                    <input type="text" id="github" class="form-control" placeholder="Enter Github URL">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="instagram">Instagram
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </label>
+                    <input type="text" id="instagram" class="form-control" placeholder="Enter Instagram URL">
+                </div> -->
+            </div>
 
 
+            <!-- Professional Details COL-2 -->
+            <div class="col-md-7" id="professional-details-form">
+                <h3 class="text-center">Professional Details</h3>
 
-                <div>
-                    <h5>Select Your Favourite Language</h5>
-                    <!-- Radio Buttons  -->
-                    <!-- if all the radio buttons have the same name then only one can be selected at a time -->
-                    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
-                    <div>
-                        <label for="java">Java</label>
-                        <input type="radio" name="fav-language" id="java" value="Java 8">
+                <!-- Objective  -->
+                <div class="form-group mt-3">
+                    <label for="objective">Objective</label>
+                    <textarea id="objective" placeholder="Write a short objective you want to pitch"
+                        class="form-control"></textarea>
+                </div>
+
+                <!-- <div class="form-group mt-4"> -->
+                <!-- <div class="grid form-group mt-4" id="add-skill-btn-div"> -->
+
+                <!-- <div id="add-skill-btn-div" class="g-col-6">
+                        <button class="btn btn-primary  mt-2" id="add-skill-btn">Add
+                            <i class=" fa-solid fa-circle-plus"></i>
+                        </button>
+                    </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- Skills -->
+                <div id="add-skill-input-div" class="mt-2 text-start">
+                    <label for="skill-input">Skills</label>
+                    <div class="input-group" id="skill-input-section">
+                        <input type="text" class="form-control" id="skill-input" placeholder="Enter your relvant skill"">
+                    <div class=" input-group-append">
+                        <button class="btn btn-primary" id="skill-input-button" type="button" onclick="addSkill()">Add
+                            <i class=" fa-solid fa-circle-plus"></i>
+                        </button>
                     </div>
-
-                    <div>
-                        <label for="python">Python</label>
-                        <input type="radio" name="fav-language" id="python" value="Python">
-                    </div>
-
-                    <div>
-                        <label for="js">Java Script</label>
-                        <input type="radio" name="fav-language" id="js" value="js" checked>
-                    </div>
-                    <input type="hidden" id="custId" name="custId" value="3487">
-                </div><br>
-
-
-
-
-                <div>
-                    <label for="ide">Choose your Favourite IDE</label>
-                    <select name="ide" id="ide">
-                        <option value="as">Android Studio</option>
-                        <option value="in">IntelliJ Idea</option>
-                        <option value="py">Pycharm</option>
-                        <option value="ecl">Eclipse</option>
-                    </select>
-                </div><br>
-
-                <div>
-                    <!-- Auto Complete Input  -->
-                    <label for="editor">Enter your Favourite Editor</label>
-                    <input list="editors" id="editor">
-                    <datalist id="editors">
-                        <option value="fleet"></option>
-                        <option value="Notepad"></option>
-                        <option value="Notepad ++">Notepad ++</option>
-                        <option value="VS Code"></option>
-                    </datalist>
-                </div><br>
-
-                <div>
-                    <!-- file upload input -->
-                    <label for="file">Upload your Resume</label><br>
-                    <input type="file" name="file" id="file">
                 </div>
+                <div id="skills"></div>
+            </div>
+            <!-- https://getbootstrap.com/docs/4.0/components/input-group/ -->
 
-                <div>
-                    <!--  checkbox input -->
-                    <h5>Select your course preference</h5>
-                    <input type="checkbox" id="mern" name="mern" value="mern">
-                    <label for="mern">MERN stack</label><br>
 
-                    <input type="checkbox" id="java-fullstack" name="java-fullstack" value="java-fullstack">
-                    <label for="java-fullstack">Java Full Stack</label><br>
+            <!-- Work Experience -->
+            <div class="form-group mt-2" id="experience-div">
+                <label for="experience">Experience</label>
+                <textarea id="experience-1" cols="30" rows="3" placeholder="Enter work/project experience"
+                    class="form-control we-field"></textarea>
 
-                    <input type="checkbox" id="elk" name="elk" value="elk">
-                    <label for="elk">ELK stack</label>
+                <div class="d-grid d-md-flex gap-2 justify-content-md-end mt-2" id="we-btns-div">
+                    <button class="btn btn-primary" id="we-add-btn" onclick="addWorkExperience()">Add Experience
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+
+                    <button class="btn btn-danger" id="we-del-btn" onclick="removeWorkExperience()">Remove
+                        Experience
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
                 </div>
+                <!-- <div class="container text-center mt-2" id="we-del-btn">
+                        <button class="btn btn-warning" onclick="addWorkExperience()">Remove Experience
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                            </svg>
+                        </button>
+                    </div> -->
+            </div>
 
 
+            <!--  Education -->
+            <div class="form-group mt-2" id="education-div">
+                <label for="education">Education</label>
+                <textarea id="education-1" cols="30" rows="3" placeholder="Enter academic qualifiaction"
+                    class="form-control ed-field"></textarea>
 
-                <br>
-                <div>
+                <!-- <div class="container text-center mt-2" id="ed-btns-div"> -->
+                <div class="d-grid d-md-flex gap-2 justify-content-md-end mt-2" id="ed-btns-div">
+                    <button class="btn btn-primary" id="ed-add-btn" onclick="addEducation()">Add Education
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
 
-                    <label for="feeback">Feedback</label><br>
-                    <textarea name="" id="feeback" cols="50" rows="3"
-                        placeholder="Enter your feeback in max 100 words"></textarea>
+                    <button class="btn btn-outline-danger" id="ed-del-btn" onclick="removeEducation()"
+                        disabled=true>Remove
+                        Education
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
 
                 </div>
+            </div>
 
-                <br>
-                <!-- submits the whole form to the server URL action="...."  -->
-                <input style="border-radius: 5px; background: whitesmoke;" type="submit" value="SUBMIT">
-                <!-- resets the whole form  -->
-                <input style="border-radius: 5px; background: rgb(237, 185, 185);" type="reset">
-
-
-            </form>
-        </fieldset>
+        </div>
 
     </div>
+    <div class="container text-center mt-4 mb-3 submit-btn">
+        <button onclick="startOver()" class="btn btn-outline-secondary">Reset
+            <i class="fa-solid fa-rotate-right"></i>
+        </button>
+        <button onclick="generateResume()" class="btn btn-success">Generate Resume
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </button>
+    </div>
+
+    </div>
+
+    <!-- TEMPLATE  -->
+    <div class="container  mt-2 border rounded" id="resume-template">
+        <div class="row  mx-3 my-3">
+            <!--COL-1 ==>  4 of 12 grid columns [Personal template]-->
+            <div class="col-md-4 background text-center ">
+                <img src="/img/blank-profile-picture.webp" id="profile-img-template" class="profile-pic text-center"
+                    alt="">
+
+                <div class="container">
+                    <h3 id="full-name-template">John Doe</h3>
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr class="text-start">
+                                <th scope="row">DOB</th>
+                                <td id="dob-template" class="text-start">15-12-1997</td>
+                            </tr>
+                            <tr class="text-start">
+                                <th scope="row">Phone</th>
+                                <td id="phone-template" class="text-start">9998887776</td>
+                            </tr>
+                            <tr class="text-start">
+                                <th scope="row">Email</th>
+                                <td id="email-template" class="text-start">example@domain.com</td>
+                            </tr>
+                            <tr class="text-start">
+                                <th scope="row">Address</th>
+                                <td id="address-template" class="text-start">New York</td>
+                                <!-- <td colspan="2">Larry the Bird</td> -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+                <h5>Links</h5>
+                <div class="container">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr class="text-start">
+                                <th scope="row">LinkedIn</th>
+                                <td><a id="linkedin-template" href="#" />www.linkedIn.com</a></td>
+                            </tr>
+                            <tr class="text-start">
+                                <th scope="row">Github</th>
+                                <td><a id="github-template" href="#" />www.github.com</a></td>
+                                <!-- <td colspan="2">Larry the Bird</td> -->
+                            </tr>
+                            <!-- <tr class="text-start">
+                                <th scope="row">Address</th>
+                                <td><a id="instagram-template" href="#" />www.github.com</a></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <!--COL-2 ==>  4 of 12 grid columns [Professional template]-->
+            <div class="col-md-8">
+                <!-- <h1 class="text-center">John Doe</h1> -->
+
+                <!-- Objective template  -->
+                <div class="card mt-2">
+                    <div class="card-header theme">
+                        <h5>Objective</h5>
+                    </div>
+                    <div class="card-body">
+                        <p id="objective-template">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quidem
+                            odio
+                            nisi error aliquid quas, doloremque quae, impedit aut corrupti dolorum sit ipsa quisquam
+                            facere!
+                            Illum dolorem cum eum eveniet reiciendis adipisci nemo corrupti magnam fugiat cumque,
+                            placeat
+                            soluta doloribus.</p>
+                    </div>
+                </div>
+
+                <!-- SKill Template  -->
+                <div class="card mt-4">
+                    <div class="card-header theme">
+                        <h5>Skills</h5>
+                    </div>
+                    <div class="card-body" id="skill-template-div">
+
+                        <span class="badge rounded-pill bg-secondary skill-pill">Java</span>
+                        <span class="badge rounded-pill bg-secondary skill-pill">Java</span>
+                    </div>
+                </div>
+
+                <!-- Work Experience template -->
+                <div class="card mt-4">
+                    <div class="card-header theme">
+                        <h5>Work Experience</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul id="we-template">
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quibusdam vero accusantium
+                                rerum tenetur explicabo id, ut saepe, voluptates nihil placeat voluptatibus facilis.
+                                Enim deserunt nostrum atque similique in magni.</li>
+                            <li>Hic et assumenda inventore laboriosam, facere, unde sapiente, culpa veritatis maxime
+                                aliquam dolorum nulla ex ullam ea dicta quae deleniti iste impedit eius voluptatum
+                                accusantium blanditiis. Qui minus recusandae incidunt.</li>
+                            <li>Odio explicabo facere quidem suscipit velit a, aspernatur, placeat saepe fugiat dolorem,
+                                doloribus repellendus nulla pariatur architecto nostrum perferendis mollitia labore eius
+                                culpa rem. Odio, esse quod! Cum, corrupti odio.</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Academic Qualification -->
+                <div class="card mt-4">
+                    <div class="card-header theme">
+                        <h5>Academic Qualification</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul id="ed-template">
+
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quibusdam vero accusantium
+                                rerum tenetur explicabo id, ut saepe, voluptates nihil placeat voluptatibus facilis.
+                                Enim deserunt nostrum atque similique in magni.</li>
+                            <li>Hic et assumenda inventore laboriosam, facere, unde sapiente, culpa veritatis maxime
+                                aliquam dolorum nulla ex ullam ea dicta quae deleniti iste impedit eius voluptatum
+                                accusantium blanditiis. Qui minus recusandae incidunt.</li>
+                            <li>Odio explicabo facere quidem suscipit velit a, aspernatur, placeat saepe fugiat dolorem,
+                                doloribus repellendus nulla pariatur architecto nostrum perferendis mollitia labore eius
+                                culpa rem. Odio, esse quod! Cum, corrupti odio.</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3 mb-4 text-center" id="save-btn">
+        <button onclick="startOver()" type="button" class="btn btn-outline-secondary">Start Over
+            <!-- <i class="fa-solid fa-dragon"></i> -->
+            <i class="fa-solid fa-hammer"></i>
+        </button>
+        <button onclick="printResume('resume-template')" class="btn btn-success">Print
+            <i class="fa-solid fa-print"></i>
+        </button>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="/js/script.js"></script> -->
+
 </body>
 
 </html>
